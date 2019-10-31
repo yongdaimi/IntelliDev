@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A095D981DCCD09B00635AD7 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D901DCCD09B00635AD7 /* libavcodec.a */; };
+		2A095D991DCCD09B00635AD7 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D911DCCD09B00635AD7 /* libavdevice.a */; };
+		2A095D9A1DCCD09B00635AD7 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D921DCCD09B00635AD7 /* libavfilter.a */; };
+		2A095D9B1DCCD09B00635AD7 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D931DCCD09B00635AD7 /* libavformat.a */; };
+		2A095D9C1DCCD09B00635AD7 /* libavresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D941DCCD09B00635AD7 /* libavresample.a */; };
+		2A095D9D1DCCD09B00635AD7 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D951DCCD09B00635AD7 /* libavutil.a */; };
+		2A095D9E1DCCD09B00635AD7 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D961DCCD09B00635AD7 /* libswresample.a */; };
+		2A095D9F1DCCD09B00635AD7 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A095D971DCCD09B00635AD7 /* libswscale.a */; };
+		2A095DA31DCCD4F900635AD7 /* H264Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A095DA21DCCD4F900635AD7 /* H264Decoder.m */; };
+		2A4751A21DCD8C9E00A863C7 /* OpenGLFrameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4751A11DCD8C9E00A863C7 /* OpenGLFrameView.m */; };
+		2A534B8B1DD02B4500823654 /* H264HWDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A534B8A1DD02B4500823654 /* H264HWDecoder.m */; };
+		2A534B8E1DD0AC6B00823654 /* OpenALPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A534B8D1DD0AC6B00823654 /* OpenALPlayer.m */; };
+		2A5E78A11CD0A2BD00422F65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E78A01CD0A2BD00422F65 /* main.m */; };
+		2A5E78A41CD0A2BD00422F65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E78A31CD0A2BD00422F65 /* AppDelegate.m */; };
+		2A5E78AC1CD0A2BD00422F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E78AB1CD0A2BD00422F65 /* Assets.xcassets */; };
+		2A5E78BC1CD0AC2A00422F65 /* CCLocalSearchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5E78BB1CD0AC2A00422F65 /* CCLocalSearchClient.m */; };
+		2A6469931CD1BF3E0042F33C /* CCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469921CD1BF3E0042F33C /* CCTabBarController.m */; };
+		2A6469961CD203780042F33C /* DeviceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469951CD203780042F33C /* DeviceListViewController.m */; };
+		2A6469991CD2038C0042F33C /* AddDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469981CD2038C0042F33C /* AddDeviceController.m */; };
+		2A6469A41CD21AF80042F33C /* ListAddedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469A31CD21AF80042F33C /* ListAddedViewController.m */; };
+		2A6469A71CD21B470042F33C /* AddSearchedDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469A61CD21B470042F33C /* AddSearchedDeviceController.m */; };
+		2A6469AB1CD21B8E0042F33C /* CCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469AA1CD21B8E0042F33C /* CCNavigationController.m */; };
+		2A6469B01CD21E8C0042F33C /* CCProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2A6469AD1CD21E8C0042F33C /* CCProgressHUD.bundle */; };
+		2A6469B11CD21E8C0042F33C /* CCProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469AF1CD21E8C0042F33C /* CCProgressHUD.m */; };
+		2A6469B61CD236EC0042F33C /* DeviceListInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469B51CD236EC0042F33C /* DeviceListInstance.m */; };
+		2A6469B81CD237AC0042F33C /* DeviceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A6469B71CD237AC0042F33C /* DeviceList.plist */; };
+		2A6469BB1CD238560042F33C /* SearchedDeviceInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469BA1CD238560042F33C /* SearchedDeviceInfoCell.m */; };
+		2A6469C11CD23E360042F33C /* CellWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469C01CD23E360042F33C /* CellWindow.m */; };
+		2A6469C41CD23E8D0042F33C /* CellWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469C31CD23E8D0042F33C /* CellWindowController.m */; };
+		2A6469C71CD244200042F33C /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6469C61CD244200042F33C /* PopupViewController.m */; };
+		2A8884CE1CD32C0B003F5096 /* CCTCPSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8884CD1CD32C0B003F5096 /* CCTCPSocketClient.m */; };
+		2AA1761D1DCF34FD00171B42 /* Mp4VideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA1761C1DCF34FD00171B42 /* Mp4VideoRecorder.m */; };
+		2AA1761F1DCF352300171B42 /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA1761E1DCF352300171B42 /* libfaac.a */; };
+		2ACCC7DA1DD1676700B38F0B /* CCMusicConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACCC7D91DD1676700B38F0B /* CCMusicConverter.m */; };
+		2ACCC7DC1DD16CBB00B38F0B /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ACCC7DB1DD16CBB00B38F0B /* libmp3lame.a */; };
+		ED0A46FD236B202400220048 /* DJH264Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0A46FC236B202400220048 /* DJH264Decoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A095D901DCCD09B00635AD7 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = IOTC/ffmpeg/lib/libavcodec.a; sourceTree = "<group>"; };
+		2A095D911DCCD09B00635AD7 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = IOTC/ffmpeg/lib/libavdevice.a; sourceTree = "<group>"; };
+		2A095D921DCCD09B00635AD7 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = IOTC/ffmpeg/lib/libavfilter.a; sourceTree = "<group>"; };
+		2A095D931DCCD09B00635AD7 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = IOTC/ffmpeg/lib/libavformat.a; sourceTree = "<group>"; };
+		2A095D941DCCD09B00635AD7 /* libavresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavresample.a; path = IOTC/ffmpeg/lib/libavresample.a; sourceTree = "<group>"; };
+		2A095D951DCCD09B00635AD7 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = IOTC/ffmpeg/lib/libavutil.a; sourceTree = "<group>"; };
+		2A095D961DCCD09B00635AD7 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = IOTC/ffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
+		2A095D971DCCD09B00635AD7 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = IOTC/ffmpeg/lib/libswscale.a; sourceTree = "<group>"; };
+		2A095DA11DCCD4F900635AD7 /* H264Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H264Decoder.h; path = IOTC/H264Decoder.h; sourceTree = "<group>"; };
+		2A095DA21DCCD4F900635AD7 /* H264Decoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H264Decoder.m; path = IOTC/H264Decoder.m; sourceTree = "<group>"; };
+		2A095DA41DCCD8AC00635AD7 /* H264DecodeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H264DecodeDefine.h; path = IOTC/H264DecodeDefine.h; sourceTree = "<group>"; };
+		2A4751A01DCD8C9E00A863C7 /* OpenGLFrameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLFrameView.h; path = GUI/OpenGLFrameView.h; sourceTree = "<group>"; };
+		2A4751A11DCD8C9E00A863C7 /* OpenGLFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenGLFrameView.m; path = GUI/OpenGLFrameView.m; sourceTree = "<group>"; };
+		2A534B891DD02B4500823654 /* H264HWDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = H264HWDecoder.h; path = IOTC/H264HWDecoder.h; sourceTree = "<group>"; };
+		2A534B8A1DD02B4500823654 /* H264HWDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = H264HWDecoder.m; path = IOTC/H264HWDecoder.m; sourceTree = "<group>"; };
+		2A534B8C1DD0AC6B00823654 /* OpenALPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenALPlayer.h; path = IOTC/OpenALPlayer.h; sourceTree = "<group>"; };
+		2A534B8D1DD0AC6B00823654 /* OpenALPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenALPlayer.m; path = IOTC/OpenALPlayer.m; sourceTree = "<group>"; };
+		2A5E789C1CD0A2BD00422F65 /* IntelliDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5E78A01CD0A2BD00422F65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A5E78A21CD0A2BD00422F65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A5E78A31CD0A2BD00422F65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2A5E78AB1CD0A2BD00422F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5E78B01CD0A2BD00422F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5E78B81CD0A48800422F65 /* CCLocalSearchDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocalSearchDefine.h; sourceTree = "<group>"; };
+		2A5E78B91CD0A54B00422F65 /* UnixInterfaceDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnixInterfaceDefine.h; sourceTree = "<group>"; };
+		2A5E78BA1CD0AC2A00422F65 /* CCLocalSearchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalSearchClient.h; path = DataModel/CCLocalSearchClient.h; sourceTree = "<group>"; };
+		2A5E78BB1CD0AC2A00422F65 /* CCLocalSearchClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalSearchClient.m; path = DataModel/CCLocalSearchClient.m; sourceTree = "<group>"; };
+		2A6469911CD1BF3E0042F33C /* CCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTabBarController.h; path = GUI/CCTabBarController.h; sourceTree = "<group>"; };
+		2A6469921CD1BF3E0042F33C /* CCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCTabBarController.m; path = GUI/CCTabBarController.m; sourceTree = "<group>"; };
+		2A6469941CD203780042F33C /* DeviceListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceListViewController.h; path = GUI/DeviceListViewController.h; sourceTree = "<group>"; };
+		2A6469951CD203780042F33C /* DeviceListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceListViewController.m; path = GUI/DeviceListViewController.m; sourceTree = "<group>"; };
+		2A6469971CD2038C0042F33C /* AddDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddDeviceController.h; path = GUI/AddDeviceController.h; sourceTree = "<group>"; };
+		2A6469981CD2038C0042F33C /* AddDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddDeviceController.m; path = GUI/AddDeviceController.m; sourceTree = "<group>"; };
+		2A6469A21CD21AF80042F33C /* ListAddedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListAddedViewController.h; path = GUI/ListAddedViewController.h; sourceTree = "<group>"; };
+		2A6469A31CD21AF80042F33C /* ListAddedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListAddedViewController.m; path = GUI/ListAddedViewController.m; sourceTree = "<group>"; };
+		2A6469A51CD21B470042F33C /* AddSearchedDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddSearchedDeviceController.h; path = GUI/AddSearchedDeviceController.h; sourceTree = "<group>"; };
+		2A6469A61CD21B470042F33C /* AddSearchedDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddSearchedDeviceController.m; path = GUI/AddSearchedDeviceController.m; sourceTree = "<group>"; };
+		2A6469A91CD21B8E0042F33C /* CCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNavigationController.h; sourceTree = "<group>"; };
+		2A6469AA1CD21B8E0042F33C /* CCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNavigationController.m; sourceTree = "<group>"; };
+		2A6469AD1CD21E8C0042F33C /* CCProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = CCProgressHUD.bundle; path = GUI/util/CCProgressHUD/CCProgressHUD.bundle; sourceTree = "<group>"; };
+		2A6469AE1CD21E8C0042F33C /* CCProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCProgressHUD.h; path = GUI/util/CCProgressHUD/CCProgressHUD.h; sourceTree = "<group>"; };
+		2A6469AF1CD21E8C0042F33C /* CCProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCProgressHUD.m; path = GUI/util/CCProgressHUD/CCProgressHUD.m; sourceTree = "<group>"; };
+		2A6469B41CD236EC0042F33C /* DeviceListInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceListInstance.h; path = DataModel/DeviceListInstance.h; sourceTree = "<group>"; };
+		2A6469B51CD236EC0042F33C /* DeviceListInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceListInstance.m; path = DataModel/DeviceListInstance.m; sourceTree = "<group>"; };
+		2A6469B71CD237AC0042F33C /* DeviceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceList.plist; sourceTree = "<group>"; };
+		2A6469B91CD238560042F33C /* SearchedDeviceInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchedDeviceInfoCell.h; path = GUI/SearchedDeviceInfoCell.h; sourceTree = "<group>"; };
+		2A6469BA1CD238560042F33C /* SearchedDeviceInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchedDeviceInfoCell.m; path = GUI/SearchedDeviceInfoCell.m; sourceTree = "<group>"; };
+		2A6469BF1CD23E360042F33C /* CellWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellWindow.h; path = GUI/CellWindow.h; sourceTree = "<group>"; };
+		2A6469C01CD23E360042F33C /* CellWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellWindow.m; path = GUI/CellWindow.m; sourceTree = "<group>"; };
+		2A6469C21CD23E8D0042F33C /* CellWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellWindowController.h; path = GUI/CellWindowController.h; sourceTree = "<group>"; };
+		2A6469C31CD23E8D0042F33C /* CellWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellWindowController.m; path = GUI/CellWindowController.m; sourceTree = "<group>"; };
+		2A6469C51CD244200042F33C /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopupViewController.h; path = GUI/PopupViewController.h; sourceTree = "<group>"; };
+		2A6469C61CD244200042F33C /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopupViewController.m; path = GUI/PopupViewController.m; sourceTree = "<group>"; };
+		2A8884CA1CD31B79003F5096 /* CCTCPDataDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTCPDataDefine.h; path = DataModel/CCTCPDataDefine.h; sourceTree = "<group>"; };
+		2A8884CB1CD31C24003F5096 /* DataStructDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStructDefine.h; path = DataModel/DataStructDefine.h; sourceTree = "<group>"; };
+		2A8884CC1CD32C0B003F5096 /* CCTCPSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTCPSocketClient.h; path = DataModel/CCTCPSocketClient.h; sourceTree = "<group>"; };
+		2A8884CD1CD32C0B003F5096 /* CCTCPSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCTCPSocketClient.m; path = DataModel/CCTCPSocketClient.m; sourceTree = "<group>"; };
+		2AA1761B1DCF34FD00171B42 /* Mp4VideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mp4VideoRecorder.h; path = IOTC/Mp4VideoRecorder.h; sourceTree = "<group>"; };
+		2AA1761C1DCF34FD00171B42 /* Mp4VideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mp4VideoRecorder.m; path = IOTC/Mp4VideoRecorder.m; sourceTree = "<group>"; };
+		2AA1761E1DCF352300171B42 /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfaac.a; path = IOTC/libfaac/lib/libfaac.a; sourceTree = "<group>"; };
+		2ACCC7D81DD1676700B38F0B /* CCMusicConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMusicConverter.h; path = IOTC/CCMusicConverter.h; sourceTree = "<group>"; };
+		2ACCC7D91DD1676700B38F0B /* CCMusicConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMusicConverter.m; path = IOTC/CCMusicConverter.m; sourceTree = "<group>"; };
+		2ACCC7DB1DD16CBB00B38F0B /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp3lame.a; path = IOTC/liblame/lib/libmp3lame.a; sourceTree = "<group>"; };
+		ED0A46FB236B202400220048 /* DJH264Decoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJH264Decoder.h; sourceTree = "<group>"; };
+		ED0A46FC236B202400220048 /* DJH264Decoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJH264Decoder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5E78991CD0A2BD00422F65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ACCC7DC1DD16CBB00B38F0B /* libmp3lame.a in Frameworks */,
+				2AA1761F1DCF352300171B42 /* libfaac.a in Frameworks */,
+				2A095D981DCCD09B00635AD7 /* libavcodec.a in Frameworks */,
+				2A095D991DCCD09B00635AD7 /* libavdevice.a in Frameworks */,
+				2A095D9A1DCCD09B00635AD7 /* libavfilter.a in Frameworks */,
+				2A095D9B1DCCD09B00635AD7 /* libavformat.a in Frameworks */,
+				2A095D9C1DCCD09B00635AD7 /* libavresample.a in Frameworks */,
+				2A095D9D1DCCD09B00635AD7 /* libavutil.a in Frameworks */,
+				2A095D9E1DCCD09B00635AD7 /* libswresample.a in Frameworks */,
+				2A095D9F1DCCD09B00635AD7 /* libswscale.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A095D8C1DCCCF8700635AD7 /* IOTC */ = {
+			isa = PBXGroup;
+			children = (
+				2A534B8C1DD0AC6B00823654 /* OpenALPlayer.h */,
+				2A534B8D1DD0AC6B00823654 /* OpenALPlayer.m */,
+				2A095DA41DCCD8AC00635AD7 /* H264DecodeDefine.h */,
+				2A095DA11DCCD4F900635AD7 /* H264Decoder.h */,
+				2A095DA21DCCD4F900635AD7 /* H264Decoder.m */,
+				2AA1761B1DCF34FD00171B42 /* Mp4VideoRecorder.h */,
+				2AA1761C1DCF34FD00171B42 /* Mp4VideoRecorder.m */,
+				2A534B891DD02B4500823654 /* H264HWDecoder.h */,
+				2A534B8A1DD02B4500823654 /* H264HWDecoder.m */,
+				2ACCC7D81DD1676700B38F0B /* CCMusicConverter.h */,
+				2ACCC7D91DD1676700B38F0B /* CCMusicConverter.m */,
+			);
+			name = IOTC;
+			sourceTree = "<group>";
+		};
+		2A095DA01DCCD0A500635AD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ACCC7DB1DD16CBB00B38F0B /* libmp3lame.a */,
+				2AA1761E1DCF352300171B42 /* libfaac.a */,
+				2A095D901DCCD09B00635AD7 /* libavcodec.a */,
+				2A095D911DCCD09B00635AD7 /* libavdevice.a */,
+				2A095D921DCCD09B00635AD7 /* libavfilter.a */,
+				2A095D931DCCD09B00635AD7 /* libavformat.a */,
+				2A095D941DCCD09B00635AD7 /* libavresample.a */,
+				2A095D951DCCD09B00635AD7 /* libavutil.a */,
+				2A095D961DCCD09B00635AD7 /* libswresample.a */,
+				2A095D971DCCD09B00635AD7 /* libswscale.a */,
+			);
+			name = Frameworks;
+			path = IntelliDev;
+			sourceTree = "<group>";
+		};
+		2A5E78931CD0A2BD00422F65 = {
+			isa = PBXGroup;
+			children = (
+				2A5E789E1CD0A2BD00422F65 /* IntelliDev */,
+				2A095DA01DCCD0A500635AD7 /* Frameworks */,
+				2A5E789D1CD0A2BD00422F65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5E789D1CD0A2BD00422F65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5E789C1CD0A2BD00422F65 /* IntelliDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5E789E1CD0A2BD00422F65 /* IntelliDev */ = {
+			isa = PBXGroup;
+			children = (
+				ED255E3A2368773700A2F5C3 /* IOTC1 */,
+				2A095D8C1DCCCF8700635AD7 /* IOTC */,
+				2A5E78B61CD0A46000422F65 /* GUI */,
+				2A5E78B71CD0A46600422F65 /* DataModel */,
+				2A5E78A21CD0A2BD00422F65 /* AppDelegate.h */,
+				2A5E78A31CD0A2BD00422F65 /* AppDelegate.m */,
+				2A5E78AB1CD0A2BD00422F65 /* Assets.xcassets */,
+				2A5E78B01CD0A2BD00422F65 /* Info.plist */,
+				2A64699B1CD2050B0042F33C /* Resouces */,
+				2A5E789F1CD0A2BD00422F65 /* Supporting Files */,
+			);
+			path = IntelliDev;
+			sourceTree = "<group>";
+		};
+		2A5E789F1CD0A2BD00422F65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469B71CD237AC0042F33C /* DeviceList.plist */,
+				2A5E78A01CD0A2BD00422F65 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5E78B61CD0A46000422F65 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469A81CD21B580042F33C /* util */,
+				2A6469A11CD20DAE0042F33C /* DeviceList */,
+				2A6469A01CD20D9F0042F33C /* AddDevice */,
+				2A6469911CD1BF3E0042F33C /* CCTabBarController.h */,
+				2A6469921CD1BF3E0042F33C /* CCTabBarController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		2A5E78B71CD0A46600422F65 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A8884CB1CD31C24003F5096 /* DataStructDefine.h */,
+				2A8884C81CD31B3B003F5096 /* TCP */,
+				2A6469B31CD236C80042F33C /* systemConfigure */,
+				2A5E78B81CD0A48800422F65 /* CCLocalSearchDefine.h */,
+				2A5E78B91CD0A54B00422F65 /* UnixInterfaceDefine.h */,
+				2A5E78BA1CD0AC2A00422F65 /* CCLocalSearchClient.h */,
+				2A5E78BB1CD0AC2A00422F65 /* CCLocalSearchClient.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		2A64699B1CD2050B0042F33C /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
+		2A6469A01CD20D9F0042F33C /* AddDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469971CD2038C0042F33C /* AddDeviceController.h */,
+				2A6469981CD2038C0042F33C /* AddDeviceController.m */,
+				2A6469A21CD21AF80042F33C /* ListAddedViewController.h */,
+				2A6469A31CD21AF80042F33C /* ListAddedViewController.m */,
+				2A6469A51CD21B470042F33C /* AddSearchedDeviceController.h */,
+				2A6469A61CD21B470042F33C /* AddSearchedDeviceController.m */,
+				2A6469B91CD238560042F33C /* SearchedDeviceInfoCell.h */,
+				2A6469BA1CD238560042F33C /* SearchedDeviceInfoCell.m */,
+			);
+			name = AddDevice;
+			sourceTree = "<group>";
+		};
+		2A6469A11CD20DAE0042F33C /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				2A4751A01DCD8C9E00A863C7 /* OpenGLFrameView.h */,
+				2A4751A11DCD8C9E00A863C7 /* OpenGLFrameView.m */,
+				2A6469941CD203780042F33C /* DeviceListViewController.h */,
+				2A6469951CD203780042F33C /* DeviceListViewController.m */,
+				2A6469BF1CD23E360042F33C /* CellWindow.h */,
+				2A6469C01CD23E360042F33C /* CellWindow.m */,
+				2A6469C21CD23E8D0042F33C /* CellWindowController.h */,
+				2A6469C31CD23E8D0042F33C /* CellWindowController.m */,
+				2A6469C51CD244200042F33C /* PopupViewController.h */,
+				2A6469C61CD244200042F33C /* PopupViewController.m */,
+			);
+			name = DeviceList;
+			sourceTree = "<group>";
+		};
+		2A6469A81CD21B580042F33C /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469AC1CD21E7C0042F33C /* CCProcessHUD */,
+				2A6469A91CD21B8E0042F33C /* CCNavigationController.h */,
+				2A6469AA1CD21B8E0042F33C /* CCNavigationController.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		2A6469AC1CD21E7C0042F33C /* CCProcessHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469AD1CD21E8C0042F33C /* CCProgressHUD.bundle */,
+				2A6469AE1CD21E8C0042F33C /* CCProgressHUD.h */,
+				2A6469AF1CD21E8C0042F33C /* CCProgressHUD.m */,
+			);
+			name = CCProcessHUD;
+			sourceTree = "<group>";
+		};
+		2A6469B31CD236C80042F33C /* systemConfigure */ = {
+			isa = PBXGroup;
+			children = (
+				2A6469B41CD236EC0042F33C /* DeviceListInstance.h */,
+				2A6469B51CD236EC0042F33C /* DeviceListInstance.m */,
+			);
+			name = systemConfigure;
+			sourceTree = "<group>";
+		};
+		2A8884C81CD31B3B003F5096 /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				2A8884CA1CD31B79003F5096 /* CCTCPDataDefine.h */,
+				2A8884CC1CD32C0B003F5096 /* CCTCPSocketClient.h */,
+				2A8884CD1CD32C0B003F5096 /* CCTCPSocketClient.m */,
+			);
+			name = TCP;
+			sourceTree = "<group>";
+		};
+		ED255E3A2368773700A2F5C3 /* IOTC1 */ = {
+			isa = PBXGroup;
+			children = (
+				ED0A46FB236B202400220048 /* DJH264Decoder.h */,
+				ED0A46FC236B202400220048 /* DJH264Decoder.m */,
+			);
+			path = IOTC1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5E789B1CD0A2BD00422F65 /* IntelliDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5E78B31CD0A2BD00422F65 /* Build configuration list for PBXNativeTarget "IntelliDev" */;
+			buildPhases = (
+				2A5E78981CD0A2BD00422F65 /* Sources */,
+				2A5E78991CD0A2BD00422F65 /* Frameworks */,
+				2A5E789A1CD0A2BD00422F65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntelliDev;
+			productName = IntelliDev;
+			productReference = 2A5E789C1CD0A2BD00422F65 /* IntelliDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5E78941CD0A2BD00422F65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = chenchao;
+				TargetAttributes = {
+					2A5E789B1CD0A2BD00422F65 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2XQNWKE38T;
+					};
+				};
+			};
+			buildConfigurationList = 2A5E78971CD0A2BD00422F65 /* Build configuration list for PBXProject "IntelliDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 2A5E78931CD0A2BD00422F65;
+			productRefGroup = 2A5E789D1CD0A2BD00422F65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5E789B1CD0A2BD00422F65 /* IntelliDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5E789A1CD0A2BD00422F65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6469B01CD21E8C0042F33C /* CCProgressHUD.bundle in Resources */,
+				2A5E78AC1CD0A2BD00422F65 /* Assets.xcassets in Resources */,
+				2A6469B81CD237AC0042F33C /* DeviceList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5E78981CD0A2BD00422F65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6469B11CD21E8C0042F33C /* CCProgressHUD.m in Sources */,
+				2A5E78A41CD0A2BD00422F65 /* AppDelegate.m in Sources */,
+				2A6469991CD2038C0042F33C /* AddDeviceController.m in Sources */,
+				ED0A46FD236B202400220048 /* DJH264Decoder.m in Sources */,
+				2A8884CE1CD32C0B003F5096 /* CCTCPSocketClient.m in Sources */,
+				2ACCC7DA1DD1676700B38F0B /* CCMusicConverter.m in Sources */,
+				2A5E78BC1CD0AC2A00422F65 /* CCLocalSearchClient.m in Sources */,
+				2A6469C71CD244200042F33C /* PopupViewController.m in Sources */,
+				2A6469931CD1BF3E0042F33C /* CCTabBarController.m in Sources */,
+				2A5E78A11CD0A2BD00422F65 /* main.m in Sources */,
+				2A6469A41CD21AF80042F33C /* ListAddedViewController.m in Sources */,
+				2A095DA31DCCD4F900635AD7 /* H264Decoder.m in Sources */,
+				2A6469A71CD21B470042F33C /* AddSearchedDeviceController.m in Sources */,
+				2A4751A21DCD8C9E00A863C7 /* OpenGLFrameView.m in Sources */,
+				2A6469961CD203780042F33C /* DeviceListViewController.m in Sources */,
+				2A6469AB1CD21B8E0042F33C /* CCNavigationController.m in Sources */,
+				2A6469BB1CD238560042F33C /* SearchedDeviceInfoCell.m in Sources */,
+				2A534B8B1DD02B4500823654 /* H264HWDecoder.m in Sources */,
+				2A6469C41CD23E8D0042F33C /* CellWindowController.m in Sources */,
+				2A6469B61CD236EC0042F33C /* DeviceListInstance.m in Sources */,
+				2A6469C11CD23E360042F33C /* CellWindow.m in Sources */,
+				2AA1761D1DCF34FD00171B42 /* Mp4VideoRecorder.m in Sources */,
+				2A534B8E1DD0AC6B00823654 /* OpenALPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2A5E78B11CD0A2BD00422F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A5E78B21CD0A2BD00422F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5E78B41CD0A2BD00422F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rongrong Xu (2V5GC7R74P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rongrong Xu (2V5GC7R74P)";
+				DEVELOPMENT_TEAM = 2XQNWKE38T;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/libfaac/include",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/ffmpeg/include",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/liblame/include",
+				);
+				INFOPLIST_FILE = IntelliDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/ffmpeg/lib",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/libfaac/lib",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/liblame/lib",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xurongrong.xurongrongDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74412cb5-7c5e-4d8a-ac45-ff09dec5c3af";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Provision;
+			};
+			name = Debug;
+		};
+		2A5E78B51CD0A2BD00422F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rongrong Xu (2V5GC7R74P)";
+				DEVELOPMENT_TEAM = 2XQNWKE38T;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/libfaac/include",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/ffmpeg/include",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/liblame/include",
+				);
+				INFOPLIST_FILE = IntelliDev/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/ffmpeg/lib",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/libfaac/lib",
+					"$(PROJECT_DIR)/IntelliDev/IOTC/liblame/lib",
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xurongrong.xurongrongDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "74412cb5-7c5e-4d8a-ac45-ff09dec5c3af";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Provision;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5E78971CD0A2BD00422F65 /* Build configuration list for PBXProject "IntelliDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E78B11CD0A2BD00422F65 /* Debug */,
+				2A5E78B21CD0A2BD00422F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5E78B31CD0A2BD00422F65 /* Build configuration list for PBXNativeTarget "IntelliDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5E78B41CD0A2BD00422F65 /* Debug */,
+				2A5E78B51CD0A2BD00422F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5E78941CD0A2BD00422F65 /* Project object */;
+}
